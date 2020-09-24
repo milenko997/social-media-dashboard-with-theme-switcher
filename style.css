@@ -16,26 +16,33 @@
     font-display: swap;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    width: 1440px;
-    margin: auto;
     font-family: Inter;
 }
 
 header {
     background-color: hsl(225, 100%, 98%);
-    padding-left: 162px;
+    width: 100%;
     padding-top: 42px;
     padding-bottom: 145px;
     display: flex;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+.container-custom {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 .main-header{
     flex: 1;
 }
@@ -54,7 +61,6 @@ header {
 .mode-change {
     flex: 1;
     text-align: right;
-    margin-right: 164px;
     margin-top: 8px;
 }
 .mode-change span {
@@ -124,26 +130,30 @@ input:checked + .slider:before {
 
 main {
     display: flex;
-    justify-content: space-between;
-    margin-left: 162px;
-    margin-right: 164px;
     margin-top: -108px;
     margin-bottom: 21px;
-    flex-wrap: wrap;
+}
+.container-wrapper {
+    display: flex;
 }
 .main-div {
     background-color: hsl(227, 47%, 96%);
     display: block;
-    width: 255px;
+    width: 23.5%;
     height: 216px;
     margin-bottom: 24px;
     border-radius: 5px;
     overflow: hidden;
+    margin-right: 2%;
+}
+.main-div:last-child {
+    margin-right: 0;
 }
 .main-div::before {
     content: '';
     height: 4px;
-    width: 255px;
+    width: 100%;
+    width: 100%;
     display: block;
 }
 .main-div:first-child::before {
@@ -211,8 +221,7 @@ main {
 }
 
 .container {
-    margin-left: 162px;
-    margin-right: 164px;
+    width: 100%;
 }
 .container h2 {
     font-size: 24px;
@@ -223,20 +232,23 @@ main {
 .container-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .container-items {
-    width: 254px;
+    width: 23.5%;
     height: 125px;
     margin-bottom: 24px;
     background-color: hsl(227, 47%, 96%);
     border-radius: 5px;
+    margin-right: 2%;
+}
+.container-items:nth-child(4n) {
+    margin-right: 0px;
 }
 .container-items:hover {
     background-color: hsl(230, 22%, 74%);
 }
 .top-side {
-    margin: 26px 30px 18px 26px;
+    margin: 20px 20px 0 20px;
     display: flex;
     justify-content: space-between;
     color: hsl(228, 12%, 44%);
@@ -246,7 +258,8 @@ main {
 .bot-side {
     display: flex;
     justify-content: space-between;
-    margin: 0px 30px 26px 26px;
+    margin: 30px 20px 0 20px;
+    
 }
 .bot-side h1 {
     font-size: 32px;
@@ -255,7 +268,7 @@ main {
     display: flex;
     align-items: center;
     font-size: 12px;
-    margin-bottom: -12px;
+    margin-bottom: -10%;
     font-weight: bold;
 }
 
@@ -288,11 +301,9 @@ main {
 .dark-mode {
     background-color: hsl(230, 17%, 14%);
     color: hsl(0, 0%, 100%);
-    transition: 0.3s ease-in;
 }
 .dark-mode header {
     background-color: hsl(232, 19%, 15%);
-    transition: 0.3s ease-in;
 }
 .dark-mode .mode-change span {
     color: hsl(228, 34%, 66%);
@@ -308,15 +319,104 @@ main {
 }
 .dark-mode .main-div{
     background-color: hsl(228, 28%, 20%);
-    transition: 0.3s ease-in;
 }
 .dark-mode .main-div:hover{
     background-color: hsl(228, 28%, 30%);
 }
 .dark-mode .container-items {
     background-color: hsl(228, 28%, 20%);
-    transition: 0.3s ease-in;
 }
 .dark-mode .container-items:hover{
     background-color: hsl(228, 28%, 30%);
+}
+
+@media (min-width:376px) {
+    .main-header hr {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-wrapper {
+        flex-wrap: wrap;
+    }
+    .main-div {
+        width: 49%;
+        margin-right: 2%;
+    }
+    .main-div:nth-child(even){
+        margin-right: 0;
+    }
+    .container-flex {
+        flex-wrap: wrap;
+    }
+    .container-items {
+        width: 49%;
+        margin-right: 2%;
+    }
+    .container-items:nth-child(even) {
+        margin-right: 0;
+    }
+    .top-side {
+        margin: 7%;
+    }
+    .bot-side {
+        margin: 7%;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-div {
+        width: 100%;
+        margin-right: 0;
+    }
+    .container-items {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:375px){
+    .container-wrapper {
+        display: block;
+    }
+    .main-header h1 {
+        font-size: 24px;
+        letter-spacing: 0px;
+    }
+    hr {
+        margin-top: 12px;
+    }
+    .mode-change {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+    }
+    .main-div {
+        margin: 0 auto 24px;
+        max-width: 324px;
+    }
+    .main-div::before {
+        width: 100%;
+    }
+    .all-together {
+        padding-top: 31px;
+    }
+    .today {
+        margin-top: 29px;
+    }
+    .container {
+        
+    }
+    .container h2 {
+        letter-spacing: 0;
+    }
+    .container-flex {
+        max-width: 324px;
+        width: 100%;
+    }
+    .container-items {
+        width: 100%;
+    }
+
 }
