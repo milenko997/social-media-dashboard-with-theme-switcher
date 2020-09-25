@@ -37,7 +37,7 @@ header {
 }
 
 .container-custom {
-    max-width: 1110px;
+    max-width: 1164px;
     width: 100%;
     margin: 0 auto;
     padding: 0 24px;
@@ -114,9 +114,9 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(-21px);
-    -ms-transform: translateX(-21px);
-    transform: translateX(-21px);
+    -webkit-transform: translateX(-22px);
+    -ms-transform: translateX(-22px);
+    transform: translateX(-22px);
 }
 
 /* Rounded sliders */
@@ -199,8 +199,8 @@ main {
     padding-top: 18px;
 }
 .followers {
-    font-size: 10px;
-    letter-spacing: 6px;
+    font-size: 12px;
+    letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
     color: hsl(228, 12%, 44%);
@@ -209,7 +209,7 @@ main {
 .today {
     font-size: 12px;
     text-align: center;
-    margin-top: 22px;
+    margin-top: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,7 +248,7 @@ main {
     background-color: hsl(230, 22%, 74%);
 }
 .top-side {
-    margin: 20px 20px 0 20px;
+    margin: 26px 34px 0 29px;;
     display: flex;
     justify-content: space-between;
     color: hsl(228, 12%, 44%);
@@ -258,7 +258,7 @@ main {
 .bot-side {
     display: flex;
     justify-content: space-between;
-    margin: 30px 20px 0 20px;
+    margin: 24px 34px 0 28px;
     
 }
 .bot-side h1 {
@@ -328,6 +328,12 @@ main {
 }
 .dark-mode .container-items:hover{
     background-color: hsl(228, 28%, 30%);
+}
+.dark-mode hr {
+    color: hsl(228, 34%, 66%);
+}
+.dark-mode .slider:before {
+    background-color: hsl(232, 19%, 15%);
 }
 
 @media (min-width:376px) {
@@ -405,9 +411,6 @@ main {
     .today {
         margin-top: 29px;
     }
-    .container {
-        
-    }
     .container h2 {
         letter-spacing: 0;
     }
@@ -417,6 +420,8 @@ main {
     }
     .container-items {
         width: 100%;
+        height: 124px;
+        margin-bottom: 17px;
     }
-
 }
+
