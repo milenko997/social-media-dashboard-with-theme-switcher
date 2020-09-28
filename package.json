@@ -1,0 +1,22 @@
+{
+  "name": "social-media-dashboard",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/decem.co/test-social-media-dashboard-with-theme-switcher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/decem.co/test-social-media-dashboard-with-theme-switcher/issues"
+  },
+  "homepage": "https://gitlab.com/decem.co/test-social-media-dashboard-with-theme-switcher#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

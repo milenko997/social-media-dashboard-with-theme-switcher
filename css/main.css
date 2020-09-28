@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 ## Reset
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0; }
@@ -247,10 +248,8 @@ td {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: Inter; }
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; }
 
 .container-custom {
   max-width: 1164px;
@@ -606,8 +605,7 @@ input:checked + .slider:before {
   color: white; }
 
 .dark-mode header {
-  background-color: #1f212e;
-  transition: 350ms ease; }
+  background-color: #1f212e; }
 
 .dark-mode .mode-change-text {
   color: #8b97c6; }

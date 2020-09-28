@@ -5,4 +5,3 @@
         element.classList.toggle("dark-mode");
     });
 })()
-
