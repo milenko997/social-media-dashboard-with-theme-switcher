@@ -1,0 +1,158 @@
+.main-div {
+    background-color: $light-grayish-blue;
+    display: block;
+    width: 23.5%;
+    height: 216px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 2%;
+}
+
+.main-div:last-child {
+    margin-right: 0;
+}
+
+.main-div::before {
+    content: '';
+    height: 4px;
+    width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.main-div:first-child::before {
+    background: $facebook;
+}
+
+.main-div:nth-child(2)::before {
+    background: $twitter;
+}
+
+.main-div:nth-child(3)::before {
+    background: $instagram;
+}
+
+.main-div:last-child::before {
+    background: $youtube;
+}
+
+.main-div:hover {
+    background-color: $toggle-light;
+}
+
+.all-together{
+    padding-top: 28px;
+    text-align: center;
+}
+
+.icon-nickname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nickname{
+    text-align: center;
+    display: inline-block;
+    color: $dark-grayish-blue;
+    font-size: 12px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.all-together img {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.main-div h1 {
+    font-size: 54px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.followers {
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-grayish-blue;
+    display: block;
+}
+
+.today {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.arrow-up {
+    color: $arrow-up;
+}
+
+.arrow-up::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent $arrow-up transparent;
+    margin-right: 5px;
+}
+
+.arrow-down {
+    color: $arrow-down;
+}
+
+.arrow-down::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: $arrow-down transparent transparent transparent;   
+    margin-right: 5px;
+}
+
+@include mq($custom-size) {
+    .main-div {
+        width: 49%;
+        margin-right: 2%;
+    }
+
+    .main-div:nth-child(even){
+        margin-right: 0;
+    }
+}
+
+@include mq($phone) {
+    .main-div {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@include mq($small-phone) {
+    .main-div {
+        margin: 0 auto 24px;
+        max-width: 324px;
+    }
+
+    .main-div::before {
+        width: 100%;
+    }
+
+    .all-together {
+        padding-top: 31px;
+    }
+
+    .today {
+        margin-top: 29px;
+    }
+}

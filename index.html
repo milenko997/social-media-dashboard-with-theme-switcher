@@ -6,35 +6,34 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
   
   <title>Social media dashboard with theme switcher</title>
 
-  <script src="script.js"></script>
 </head>
 <body>
-
   <header>
     <div class="container-custom">
       <div class="container-wrapper">
         <div class="main-header">
-          <h1>
+          <h1 class="main-header-title">
             Social Media Dashboard
           </h1>
-    
+
           <span class="total-folowers">
             Total Followers: 23,004
           </span>
-          <hr>
+          <hr class="line">
         </div>
         <div class="mode-change">
-          <span>
+          <span class="mode-change-text">
             Dark Mode
           </span>
-          
+
           <!-- Rounded switch -->
           <label class="switch">
-            <input type="checkbox" onclick="darkModeFunc()">
+            <input type="checkbox" name="theme-switcher" id="theme-switcher">
             <span class="slider"></span>
           </label>
         </div>
@@ -64,7 +63,7 @@
             </div>
           </div>
         </div>
-      
+
         <div class="main-div">
           <div class="all-together">
             <div class="icon-nickname">
@@ -84,7 +83,7 @@
             </div>
           </div>
         </div>
-      
+
         <div class="main-div">
           <div class="all-together">
             <div class="icon-nickname">
@@ -104,7 +103,7 @@
             </div>
           </div>
         </div>
-      
+
         <div class="main-div">
           <div class="all-together">
             <div class="icon-nickname">
@@ -130,13 +129,13 @@
 
   <div class="container">
     <div class="container-custom">
-      <h2>
+      <h2 class="container-heading">
         Overview - Today
       </h2>
       <div class="container-flex">
         <div class="container-items">
           <div class="top-side">
-            <span>
+            <span class="top-side-text">
               Page Views
             </span>
             <img src="images/icon-facebook.svg" alt="icon-facebook">
@@ -153,7 +152,7 @@
 
         <div class="container-items">
           <div class="top-side">
-            <span>
+            <span class="top-side-text">
               Likes
             </span>
               <img src="images/icon-facebook.svg" alt="icon-facebook">
@@ -170,7 +169,7 @@
 
         <div class="container-items">
           <div class="top-side">
-            <span>
+            <span class="top-side-text">
               Likes
             </span>
               <img src="images/icon-instagram.svg" alt="icon-instagram">
@@ -187,7 +186,7 @@
 
         <div class="container-items">
           <div class="top-side">
-            <span>
+            <span class="top-side-text">
               Profile Views
             </span>
               <img src="images/icon-instagram.svg" alt="icon-instagram">
@@ -204,7 +203,7 @@
 
         <div class="container-items">
           <div class="top-side">
-            <span>
+            <span class="top-side-text">
               Retweets
             </span>
               <img src="images/icon-twitter.svg" alt="icon-twitter">
@@ -221,7 +220,7 @@
 
         <div class="container-items">
           <div class="top-side">
-            <span>
+            <span class="top-side-text">
               Likes
             </span>
               <img src="images/icon-twitter.svg" alt="icon-twitter">
@@ -238,7 +237,7 @@
 
         <div class="container-items">
           <div class="top-side">
-            <span>
+            <span class="top-side-text">
               Likes
             </span>
               <img src="images/icon-youtube.svg" alt="icon-youtube">
@@ -255,7 +254,7 @@
 
         <div class="container-items">
           <div class="top-side">
-            <span>
+            <span class="top-side-text">
               Total Views
             </span>
               <img src="images/icon-youtube.svg" alt="icon-youtube">
@@ -272,5 +271,7 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

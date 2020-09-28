@@ -1,0 +1,53 @@
+.dark-mode {
+    background-color: $very-dark-blue;
+    color: $white;
+}
+
+.dark-mode header {
+    background-color: $very-dark-blue-header-bg;
+    transition: $dur $ease;
+}
+
+.dark-mode .mode-change-text {
+    color: $desaturated-blue;
+}
+
+.dark-mode .nickname {
+    color: $desaturated-blue;
+}
+
+.dark-mode .container-heading {
+    color: $white;
+}
+
+.dark-mode .main-div{
+    background-color: $dark-desaturated-blue;
+}
+
+.dark-mode .main-div:hover{
+    background-color: $dark-desaturated-blue-hover;
+}
+
+.dark-mode .container-items {
+    background-color: $dark-desaturated-blue;
+}
+
+.dark-mode .container-items:hover{
+    background-color: $dark-desaturated-blue-hover;
+}
+
+.dark-mode .top-side-text {
+    color: $desaturated-blue;
+}
+
+.dark-mode hr {
+    color: $desaturated-blue;
+}
+
+.dark-mode .slider:before {
+    background-color: $very-dark-blue;
+}
+
+.dark-mode {
+    transition: $dur $ease;
+}

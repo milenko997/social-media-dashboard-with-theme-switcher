@@ -1,0 +1,26 @@
+@include mq($custom-size) {
+    .container-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@include mq($small-phone) {
+    .container-wrapper {
+        display: block;
+    }
+
+    .main-header-title {
+        font-size: 24px;
+        letter-spacing: 0px;
+    }
+
+    .line {
+        margin-top: 12px;
+    }
+}
+
+@include mq2($hide-line){
+    .line {
+        display: none;
+    }
+}
